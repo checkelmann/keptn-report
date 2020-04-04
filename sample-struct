@@ -1,0 +1,80 @@
+type Report struct {
+	Contenttype string `json:"contenttype"`
+	Data        struct {
+		Deploymentstrategy string `json:"deploymentstrategy"`
+		Evaluationdetails  struct {
+			IndicatorResults []struct {
+				Score   int    `json:"score"`
+				Status  string `json:"status"`
+				Targets []struct {
+					Criteria    string `json:"criteria"`
+					TargetValue int    `json:"targetValue"`
+					Violated    bool   `json:"violated"`
+				} `json:"targets"`
+				Value struct {
+					Metric  string  `json:"metric"`
+					Success bool    `json:"success"`
+					Value   float64 `json:"value"`
+				} `json:"value"`
+			} `json:"indicatorResults"`
+			Result         string    `json:"result"`
+			Score          int       `json:"score"`
+			SloFileContent string    `json:"sloFileContent"`
+			TimeEnd        time.Time `json:"timeEnd"`
+			TimeStart      time.Time `json:"timeStart"`
+		} `json:"evaluationdetails"`
+		Labels            interface{} `json:"labels"`
+		Project           string      `json:"project"`
+		Result            string      `json:"result"`
+		Service           string      `json:"service"`
+		Stage             string      `json:"stage"`
+		Teststrategy      string      `json:"teststrategy"`
+		EvaluationHistory []struct {
+			Contenttype string `json:"contenttype"`
+			Data        struct {
+				Deploymentstrategy string `json:"deploymentstrategy"`
+				Evaluationdetails  struct {
+					IndicatorResults []struct {
+						Score   int    `json:"score"`
+						Status  string `json:"status"`
+						Targets []struct {
+							Criteria    string `json:"criteria"`
+							TargetValue int    `json:"targetValue"`
+							Violated    bool   `json:"violated"`
+						} `json:"targets"`
+						Value struct {
+							Metric  string  `json:"metric"`
+							Success bool    `json:"success"`
+							Value   float64 `json:"value"`
+						} `json:"value"`
+					} `json:"indicatorResults"`
+					Result         string    `json:"result"`
+					Score          int       `json:"score"`
+					SloFileContent string    `json:"sloFileContent"`
+					TimeEnd        time.Time `json:"timeEnd"`
+					TimeStart      time.Time `json:"timeStart"`
+				} `json:"evaluationdetails"`
+				Labels       interface{} `json:"labels"`
+				Project      string      `json:"project"`
+				Result       string      `json:"result"`
+				Service      string      `json:"service"`
+				Stage        string      `json:"stage"`
+				Teststrategy string      `json:"teststrategy"`
+			} `json:"data"`
+			ID             string    `json:"id"`
+			Source         string    `json:"source"`
+			Specversion    string    `json:"specversion"`
+			Time           time.Time `json:"time"`
+			Type           string    `json:"type"`
+			Shkeptncontext string    `json:"shkeptncontext"`
+		} `json:"evaluationHistory"`
+	} `json:"data"`
+	ID             string    `json:"id"`
+	Source         string    `json:"source"`
+	Specversion    string    `json:"specversion"`
+	Time           time.Time `json:"time"`
+	Type           string    `json:"type"`
+	Shkeptncontext string    `json:"shkeptncontext"`
+	Icon           string    `json:"icon"`
+	Label          string    `json:"label"`
+}

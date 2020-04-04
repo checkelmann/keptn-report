@@ -1,0 +1,2074 @@
+{
+    "contenttype": "application/json",
+    "data": {
+      "deploymentstrategy": "",
+      "evaluationdetails": {
+        "indicatorResults": [
+          {
+            "score": 1,
+            "status": "pass",
+            "targets": [
+              {
+                "criteria": "<=+10%",
+                "targetValue": 0,
+                "violated": false
+              },
+              {
+                "criteria": "<600",
+                "targetValue": 600,
+                "violated": false
+              }
+            ],
+            "value": {
+              "metric": "response_time_p95",
+              "success": true,
+              "value": 0.3074831149477437
+            }
+          },
+          {
+            "score": 0,
+            "status": "info",
+            "targets": null,
+            "value": {
+              "metric": "throughput",
+              "success": true,
+              "value": 1
+            }
+          },
+          {
+            "score": 0,
+            "status": "info",
+            "targets": null,
+            "value": {
+              "metric": "error_rate",
+              "success": true,
+              "value": 0
+            }
+          },
+          {
+            "score": 0,
+            "status": "info",
+            "targets": null,
+            "value": {
+              "metric": "response_time_p50",
+              "success": true,
+              "value": 0.16359683225391136
+            }
+          },
+          {
+            "score": 0,
+            "status": "info",
+            "targets": null,
+            "value": {
+              "metric": "response_time_p90",
+              "success": true,
+              "value": 0.289024355573157
+            }
+          }
+        ],
+        "result": "pass",
+        "score": 100,
+        "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+        "timeEnd": "2020-04-02T15:18:55.000Z",
+        "timeStart": "2020-04-02T15:11:55.000Z"
+      },
+      "labels": null,
+      "project": "sampleapp",
+      "result": "pass",
+      "service": "sampleapp",
+      "stage": "test",
+      "teststrategy": "manual",
+      "evaluationHistory": [
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.19773749999999995
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.11489999999999995
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-20T13:47:51.034Z",
+              "timeStart": "2020-03-20T13:37:51.034Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "01234ffb-185a-4104-a3aa-8c477fc751be",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-20T13:49:55.523Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "7391c7ca-9283-41f5-a114-cb110f7fc149"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.21751124999999993,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.23024999999999993
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.13374500000000006
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-20T14:40:54.258Z",
+              "timeStart": "2020-03-20T14:30:54.258Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "6ee5c724-7c79-4199-a263-86573f7c4c1f",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-20T14:42:58.630Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "13f042a7-5a79-46fb-8853-4e06e334b60c"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.25284999999999996
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.20079999999999995
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-26T07:29:54.358Z",
+              "timeStart": "2020-03-26T07:19:54.358Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "3954de8d-0d11-4968-8fb4-01bbd02e677b",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-26T07:31:58.510Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "1573699a-2747-4e76-97f3-97dc64de4923"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.27813499999999997,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.43985624999999984
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.03997560975609756
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.34085999999999994
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-26T07:50:34.034Z",
+              "timeStart": "2020-03-26T07:40:34.034Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "a167edcb-ffa4-453b-88bf-82f62201f1be",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-26T07:52:38.304Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "f77fc3d6-c166-48f7-9590-0395a317eea4"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.39426874999999956
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.03998780487804878
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.30176000000000003
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-26T09:08:22.242Z",
+              "timeStart": "2020-03-26T08:58:22.242Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "a61fc063-c066-4f04-b091-68f511ddad4d",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-26T09:10:26.401Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "58f5f1d8-3e97-498c-aa82-51e2450a2a15"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.43369562499999953,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.44743749999999965
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.03898780487804878
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.3197225
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-26T09:47:07.315Z",
+              "timeStart": "2020-03-26T09:37:07.315Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "27956ff2-5e54-4c42-9499-6f3e29f68ad7",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-26T09:49:16.127Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "b580b08a-f346-4e0d-baea-7fc17b40f717"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.17860000000000004
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.15709999999999996
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T13:51:42Z",
+              "timeStart": "2020-03-29T13:51:41Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "performance"
+          },
+          "id": "a76db1fa-e0e5-4a73-9a7b-74e413b9248a",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T13:53:45.098Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "79a0218e-a1b6-4532-b765-78a71458c710"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.19646000000000005,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.29419999999999963
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.207
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T15:20:28Z",
+              "timeStart": "2020-03-29T15:20:27Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "performance"
+          },
+          "id": "ad27ab0b-ebf7-4d21-bb93-668d473defa6",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T15:22:30.126Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "a60125b6-2c4c-4801-b2dd-fb52bbef5ecb"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.15746095265414609
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.05814726059267138
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.09308075669738382
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T15:26:27.000Z",
+              "timeStart": "2020-03-29T15:20:27.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "0644ff7d-a820-4ef6-8ccb-55071ca22b2d",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T15:28:51.746Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "c3bd4400-e3c3-4112-839f-5d2cfd757c6f"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.17320704791956068,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.20799999999999988
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.0986
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T15:33:55Z",
+              "timeStart": "2020-03-29T15:33:54Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "performance"
+          },
+          "id": "ff0b00d8-a442-4a4f-9503-9506484254a3",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T15:35:57.767Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "f795ec98-f6cc-4534-a14e-b9109ada0123"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.14179999999999995
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.037
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.09659999999999999
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T16:03:21Z",
+              "timeStart": "2020-03-29T16:03:21Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "performance"
+          },
+          "id": "1d30e59d-68ee-4cc0-aa12-77186f77d24c",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T16:05:24.139Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "67303ebb-1717-42ea-9645-2edb60513c67"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 0.5,
+                  "status": "warning",
+                  "targets": [
+                    {
+                      "criteria": "<=800",
+                      "targetValue": 800,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.15597999999999995,
+                      "violated": true
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.2063311645549083
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.055698919250901556
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.11643042490037067
+                  }
+                }
+              ],
+              "result": "fail",
+              "score": 50,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-29T16:15:21.000Z",
+              "timeStart": "2020-03-29T16:03:21.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "fail",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "d4e1b62c-a7da-4e79-bcda-0c397b33e0c6",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-29T16:17:27.225Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "89dd0926-e706-482f-8b9e-e1734084c0d8"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.27125
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.038
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.1741999999999999
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-30T08:18:25Z",
+              "timeStart": "2020-03-30T08:18:22Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "performance"
+          },
+          "id": "8eda535c-a69b-4241-9195-d179da843d42",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-30T08:20:27.734Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "bb9f4d22-2871-4bda-9cd8-31b90d9d4d18"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0.298375,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.1644419216647512
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.056080381299663994
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.09199074823533991
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-03-30T08:31:23.000Z",
+              "timeStart": "2020-03-30T08:18:23.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "e2f7ff24-99f6-43e2-aa49-42b8f48664b3",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-03-30T08:33:28.195Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "aba64fc6-d0a9-43ad-960b-b2ec1cb4ce21"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-01T06:59:58Z",
+              "timeStart": "2020-04-01T06:59:57Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "493662134",
+              "runby": "",
+              "testid": "493662134"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "15c20f60-81fd-4c16-a4ed-0059efcadcaf",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-01T06:59:58.270Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "74f0b5f6-88ac-492c-a605-d2097c08725e"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.14359240222925349
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.06050582294351644
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.088441362645671
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-01T07:06:58.000Z",
+              "timeStart": "2020-04-01T06:59:58.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "b2ce056b-f834-4c03-91e0-ad39560e2a1e",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-01T07:08:59.898Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "7fcb526f-ee75-4016-aab7-f73604861c56"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-02T07:16:02Z",
+              "timeStart": "2020-04-02T07:16:01Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "495424392",
+              "runby": "",
+              "testid": "495424392"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "850d7e0c-efdc-4a0b-aa7d-0440ef3bcfe7",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T07:16:02.672Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "bbefbf18-8cb3-4ab0-94b3-0cad8703640e"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.19755995393796505
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.06282163285584977
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.11562090838083673
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-02T07:23:01.000Z",
+              "timeStart": "2020-04-02T07:16:01.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "2442359e-ed84-4dbb-a0de-b7c9eaed89de",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T07:25:11.613Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "64a6b174-a001-42b8-b6c6-6c0ef554229a"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-02T08:37:10Z",
+              "timeStart": "2020-04-02T08:37:10Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "495563598",
+              "runby": "",
+              "testid": "495563598"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "46f5a0d4-ec40-4995-81aa-a7934d9b6b0b",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T08:37:10.777Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "64189b2f-187d-44d8-a699-ae931f3772d4"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.1725524302815881
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.06204356220404357
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.09601630840153795
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-02T08:45:10.000Z",
+              "timeStart": "2020-04-02T08:37:10.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "876e754f-aa3f-4399-b50a-9000b120c940",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T08:47:19.324Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "85cb1003-c209-4630-bc85-bcd7131d88ec"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-02T11:36:04Z",
+              "timeStart": "2020-04-02T11:36:02Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "495851076",
+              "runby": "",
+              "testid": "495851076"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "9d586d9f-87ce-482e-b083-f26a26bd98f5",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T11:36:04.939Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "97a457dd-9718-4d17-a278-0efa368b8062"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.3148058739248271
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.07661592700278975
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.2969741092737013
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-02T11:43:03.000Z",
+              "timeStart": "2020-04-02T11:36:03.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "0812895e-eac5-43af-8461-818b7c83a6c4",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T11:45:06.123Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "a3ca388e-31a3-4207-a6f7-b0b8b5097577"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-02T13:02:57Z",
+              "timeStart": "2020-04-02T13:02:57Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "495995702",
+              "runby": "Christian Heckelmann",
+              "testid": "495995702"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "1b81c078-6205-4412-8ea7-ceb525d1dd0e",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T13:02:57.987Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "101d7e78-42ee-4d70-8343-4f0eedd05e15"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.3117638642176488
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.070092231766998
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.29057449620560416
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-02T13:09:57.000Z",
+              "timeStart": "2020-04-02T13:02:57.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "eeff8614-7b25-4b82-af5a-f9b4bcbd0a6c",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T13:12:07.059Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "9f10816a-0d1e-4e76-8550-674526058807"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "direct",
+            "evaluationdetails": {
+              "indicatorResults": null,
+              "result": "no evaluation performed by lighthouse because no test has been executed",
+              "score": 0,
+              "sloFileContent": "",
+              "timeEnd": "2020-04-02T15:11:55Z",
+              "timeStart": "2020-04-02T15:11:54Z"
+            },
+            "labels": {
+              "SyntheticFrequency": "5",
+              "SyntheticManuallyAssignedApp": "APPLICATION-EA7C4B59F27D43EB",
+              "buildnr": "496282105",
+              "runby": "Christian Heckelmann",
+              "testid": "496282105"
+            },
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": ""
+          },
+          "id": "3cd10d69-e414-41e5-92dc-7265ca16dd6f",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T15:11:55.735Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "08236d5d-0ede-478b-94c7-96f2e26c31b6"
+        },
+        {
+          "contenttype": "application/json",
+          "data": {
+            "deploymentstrategy": "",
+            "evaluationdetails": {
+              "indicatorResults": [
+                {
+                  "score": 1,
+                  "status": "pass",
+                  "targets": [
+                    {
+                      "criteria": "<=+10%",
+                      "targetValue": 0,
+                      "violated": false
+                    },
+                    {
+                      "criteria": "<600",
+                      "targetValue": 600,
+                      "violated": false
+                    }
+                  ],
+                  "value": {
+                    "metric": "response_time_p95",
+                    "success": true,
+                    "value": 0.3074831149477437
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "throughput",
+                    "success": true,
+                    "value": 1
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "error_rate",
+                    "success": true,
+                    "value": 0
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p50",
+                    "success": true,
+                    "value": 0.16359683225391136
+                  }
+                },
+                {
+                  "score": 0,
+                  "status": "info",
+                  "targets": null,
+                  "value": {
+                    "metric": "response_time_p90",
+                    "success": true,
+                    "value": 0.289024355573157
+                  }
+                }
+              ],
+              "result": "pass",
+              "score": 100,
+              "sloFileContent": "Y29tcGFyaXNvbjoKICBhZ2dyZWdhdGVfZnVuY3Rpb246IGF2ZwogIGNvbXBhcmVfd2l0aDogc2luZ2xlX3Jlc3VsdAogIGluY2x1ZGVfcmVzdWx0X3dpdGhfc2NvcmU6IHBhc3MKICBudW1iZXJfb2ZfY29tcGFyaXNvbl9yZXN1bHRzOiAzCmZpbHRlcjogbnVsbApvYmplY3RpdmVzOgotIGtleV9zbGk6IGZhbHNlCiAgcGFzczoKICAtIGNyaXRlcmlhOgogICAgLSA8PSsxMCUKICAgIC0gPDYwMAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTUKICB3YXJuaW5nOgogIC0gY3JpdGVyaWE6CiAgICAtIDw9ODAwCiAgd2VpZ2h0OiAxCi0ga2V5X3NsaTogZmFsc2UKICBwYXNzOiBudWxsCiAgc2xpOiB0aHJvdWdocHV0CiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogZXJyb3JfcmF0ZQogIHdhcm5pbmc6IG51bGwKICB3ZWlnaHQ6IDEKLSBrZXlfc2xpOiBmYWxzZQogIHBhc3M6IG51bGwKICBzbGk6IHJlc3BvbnNlX3RpbWVfcDUwCiAgd2FybmluZzogbnVsbAogIHdlaWdodDogMQotIGtleV9zbGk6IGZhbHNlCiAgcGFzczogbnVsbAogIHNsaTogcmVzcG9uc2VfdGltZV9wOTAKICB3YXJuaW5nOiBudWxsCiAgd2VpZ2h0OiAxCnNwZWNfdmVyc2lvbjogMC4xLjAKdG90YWxfc2NvcmU6CiAgcGFzczogOTAlCiAgd2FybmluZzogNzUlCg==",
+              "timeEnd": "2020-04-02T15:18:55.000Z",
+              "timeStart": "2020-04-02T15:11:55.000Z"
+            },
+            "labels": null,
+            "project": "sampleapp",
+            "result": "pass",
+            "service": "sampleapp",
+            "stage": "test",
+            "teststrategy": "manual"
+          },
+          "id": "bb0f28a3-72a1-4678-93e8-67f440f6ea7d",
+          "source": "lighthouse-service",
+          "specversion": "0.2",
+          "time": "2020-04-02T15:21:05.106Z",
+          "type": "sh.keptn.events.evaluation-done",
+          "shkeptncontext": "905d86e3-62a0-4d5e-990b-73c8bf4bd4fd"
+        }
+      ]
+    },
+    "id": "bb0f28a3-72a1-4678-93e8-67f440f6ea7d",
+    "source": "lighthouse-service",
+    "specversion": "0.2",
+    "time": "2020-04-02T15:21:05.106Z",
+    "type": "sh.keptn.events.evaluation-done",
+    "shkeptncontext": "905d86e3-62a0-4d5e-990b-73c8bf4bd4fd",
+    "icon": "traffic-light",
+    "label": "Evaluation done"
+  }
