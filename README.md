@@ -2,18 +2,14 @@
 
 A small utility to render keptn Quality Gates evaluation results to a PDF Report.
 
+![sample](https://i.imgur.com/g4lfo6u.png)
+
 ## Installation
 
 Install with go
 
 ```bash
-go install github.com/keptn-sandbox/keptn-report
-```
-
-Install from release
-
-```bash
-curl https://github.com/keptn-sandbox/keptn-report/release/keptn-report
+go install github.com/checkelmann/keptn-report
 ```
 
 ## Usage
