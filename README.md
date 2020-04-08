@@ -2,7 +2,7 @@
 
 A small utility to render keptn Quality Gates evaluation results to a PDF Report.
 
-![sample](https://i.imgur.com/g4lfo6u.png)
+![sample](https://i.imgur.com/CnoL19A.png)
 
 ## Installation
 

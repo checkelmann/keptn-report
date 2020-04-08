@@ -110,6 +110,8 @@ func createReport(sourceFile string, reportFile string) {
 
 	// Use the struct
 	var jsonReport KeptnReport
+	var chartPosition float64
+	chartPosition = 50
 
 	// Load Json to the struct
 	json.Unmarshal([]byte(sourceFile), &jsonReport)
@@ -217,7 +219,7 @@ func createReport(sourceFile string, reportFile string) {
 		var valueString string = strconv.FormatFloat(indicator.Value.Value, 'f', -1, 64)
 		pdf.CellFormat(190, 4, indicator.Value.Metric+":\t "+valueString+"\t ("+indicator.Status+")",
 			"0", 1, "LM", false, 0, "")
-
+		chartPosition = chartPosition + 7
 		for _, target := range indicator.Targets {
 			var targetString string
 			if target.Violated {
@@ -227,6 +229,8 @@ func createReport(sourceFile string, reportFile string) {
 			}
 			pdf.CellFormat(190, 4, targetString,
 				"0", 1, "LM", false, 0, "")
+
+			chartPosition = chartPosition + 7
 		}
 	}
 
@@ -254,7 +258,7 @@ func createReport(sourceFile string, reportFile string) {
 
 	pdf.ImageOptions(
 		"chart",
-		0, 100,
+		0, chartPosition,
 		200, 0,
 		false,
 		chartOptions,
