@@ -10,7 +10,6 @@ import (
 	"io"
 	"io/ioutil"
 	"log"
-	"math/rand"
 	"os"
 	"strconv"
 	"time"
@@ -100,10 +99,6 @@ type KeptnReport struct {
 	Shkeptncontext string    `json:"shkeptncontext"`
 	Icon           string    `json:"icon"`
 	Label          string    `json:"label"`
-}
-
-func random(min, max float64) float64 {
-	return rand.Float64()*(max-min) + min
 }
 
 func createReport(sourceFile string, reportFile string) {
