@@ -18,7 +18,7 @@ import (
 	"github.com/wcharczuk/go-chart"
 )
 
-// KeptnReport Struct
+// KeptnReport Structure
 // Generated using https://mholt.github.io/json-to-go/
 type KeptnReport struct {
 	Contenttype string `json:"contenttype"`
@@ -163,6 +163,7 @@ func createReport(sourceFile string, reportFile string) {
 	var series []chart.Series
 	// k is the key like 'response_time_p95'
 	for k := range chartValues {
+		// The TimeSeries chart type will create a Line Diagram
 		series = append(series, chart.TimeSeries{
 			Name:    k,
 			XValues: TimeValues,
@@ -215,10 +216,16 @@ func createReport(sourceFile string, reportFile string) {
 	pdf.SetXY(10, 55)
 	for _, indicator := range jsonReport.Data.Evaluationdetails.IndicatorResults {
 		var valueString string = strconv.FormatFloat(indicator.Value.Value, 'f', -1, 64)
+
 		pdf.CellFormat(190, 4, indicator.Value.Metric+":\t "+valueString+"\t ("+indicator.Status+")",
 			"0", 1, "LM", false, 0, "")
+
+		// Add 7mm to the final chart Position for each line
 		chartPosition = chartPosition + 7
+
 		for _, target := range indicator.Targets {
+
+			// Print Indicator Targets on the Report
 			var targetString string
 			if target.Violated {
 				targetString = "   Test criteria " + target.Criteria + " violated with " + strconv.FormatInt(int64(target.TargetValue), 10)
@@ -228,6 +235,7 @@ func createReport(sourceFile string, reportFile string) {
 			pdf.CellFormat(190, 4, targetString,
 				"0", 1, "LM", false, 0, "")
 
+			// Add 7mm to the final chart Position for each line
 			chartPosition = chartPosition + 7
 		}
 	}
