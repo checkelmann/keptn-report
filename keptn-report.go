@@ -109,6 +109,8 @@ func createReport(sourceFile string, reportFile string) {
 	// Start Position of the chart on the PDF
 	// Additional 7mm will be appended with every Line of Text
 	var chartPosition float64
+	var historyDataFound bool
+	chartBuffer := bytes.NewBuffer([]byte{})
 	chartPosition = 50
 
 	// Load Json to the struct
@@ -127,62 +129,65 @@ func createReport(sourceFile string, reportFile string) {
 	// Load Logo into byte-buffer
 	logoBuffer := bytes.NewBuffer(logoBytes)
 
-	// Loop over the Evaluation History from the report
-	for _, history := range jsonReport.Data.EvaluationHistory {
+	if len(jsonReport.Data.EvaluationHistory) != 0 {
+		historyDataFound = true
+		// Loop over the Evaluation History from the report
+		for _, history := range jsonReport.Data.EvaluationHistory {
 
-		// Check if we have any results in the EvaluationDetails
-		if len(history.Data.Evaluationdetails.IndicatorResults) != 0 {
+			// Check if we have any results in the EvaluationDetails
+			if len(history.Data.Evaluationdetails.IndicatorResults) != 0 {
 
-			// Add the evaluation time to the TimesValue Array
-			TimeValues = append(TimeValues, history.Time)
+				// Add the evaluation time to the TimesValue Array
+				TimeValues = append(TimeValues, history.Time)
 
-			// Loop over the Indicator Results
-			for _, historyIndicatorResults := range history.Data.Evaluationdetails.IndicatorResults {
+				// Loop over the Indicator Results
+				for _, historyIndicatorResults := range history.Data.Evaluationdetails.IndicatorResults {
 
-				// Append results to the chartValues map like chartValues['response_time_p95'][1.0123,2.728,1.8393]
-				chartValues[historyIndicatorResults.Value.Metric] = append(chartValues[historyIndicatorResults.Value.Metric], historyIndicatorResults.Value.Value)
+					// Append results to the chartValues map like chartValues['response_time_p95'][1.0123,2.728,1.8393]
+					chartValues[historyIndicatorResults.Value.Metric] = append(chartValues[historyIndicatorResults.Value.Metric], historyIndicatorResults.Value.Value)
+				}
 			}
 		}
-	}
-
-	// Create a new Chart
-	graph := chart.Chart{
-		Background: chart.Style{
-			Padding: chart.Box{
-				Top:    20,
-				Left:   20,
-				Right:  20,
-				Bottom: 100,
+		// Create a new Chart
+		graph := chart.Chart{
+			Background: chart.Style{
+				Padding: chart.Box{
+					Top:    20,
+					Left:   20,
+					Right:  20,
+					Bottom: 100,
+				},
 			},
-		},
-		// Leave the Series empty, we will add them later
-		Series: []chart.Series{},
-	}
+			// Leave the Series empty, we will add them later
+			Series: []chart.Series{},
+		}
 
-	// Loop Over the chartValues map
-	var series []chart.Series
-	// k is the key like 'response_time_p95'
-	for k := range chartValues {
-		// The TimeSeries chart type will create a Line Diagram
-		series = append(series, chart.TimeSeries{
-			Name:    k,
-			XValues: TimeValues,
-			YValues: chartValues[k],
-		})
-	}
+		// Loop Over the chartValues map
+		var series []chart.Series
+		// k is the key like 'response_time_p95'
+		for k := range chartValues {
+			// The TimeSeries chart type will create a Line Diagram
+			series = append(series, chart.TimeSeries{
+				Name:    k,
+				XValues: TimeValues,
+				YValues: chartValues[k],
+			})
+		}
 
-	// Add Series to the chart
-	graph.Series = series
-	graph.Elements = []chart.Renderable{
-		chart.LegendThin(&graph),
-	}
+		// Add Series to the chart
+		graph.Series = series
+		graph.Elements = []chart.Renderable{
+			chart.LegendThin(&graph),
+		}
 
-	// Render to buffer to an image
-	chartBuffer := bytes.NewBuffer([]byte{})
-	err := graph.Render(chart.PNG, chartBuffer)
-	if err != nil {
-		fmt.Println(err)
-		return
+		// Render to buffer to an image
+		err := graph.Render(chart.PNG, chartBuffer)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+	} else {
+		historyDataFound = false
 	}
 
 	// Add a new PDF Page
@@ -255,28 +260,30 @@ func createReport(sourceFile string, reportFile string) {
 		"",
 	)
 
-	// Add chart image from buffer to the pdf
-	// ImageOptions(src, x, y, width, height, flow, options, link, linkStr)
-	var chartOptions gofpdf.ImageOptions
-	chartOptions.ImageType = "png"
-	chartOptions.AllowNegativePosition = true
-	_ = pdf.RegisterImageOptionsReader("chart", chartOptions, chartBuffer)
+	if historyDataFound {
+		// Add chart image from buffer to the pdf
+		// ImageOptions(src, x, y, width, height, flow, options, link, linkStr)
+		var chartOptions gofpdf.ImageOptions
+		chartOptions.ImageType = "png"
+		chartOptions.AllowNegativePosition = true
+		_ = pdf.RegisterImageOptionsReader("chart", chartOptions, chartBuffer)
 
-	pdf.ImageOptions(
-		"chart",
-		0, chartPosition,
-		200, 0,
-		false,
-		chartOptions,
-		0,
-		"",
-	)
+		pdf.ImageOptions(
+			"chart",
+			0, chartPosition,
+			200, 0,
+			false,
+			chartOptions,
+			0,
+			"",
+		)
+	}
 
 	// Save PDF Document
 	//fmt.Println("Saved keptn-report to: " + reportFile)
-	err = pdf.OutputFileAndClose(reportFile)
-	if err != nil {
-		fmt.Println(err)
+	errFile := pdf.OutputFileAndClose(reportFile)
+	if errFile != nil {
+		fmt.Println(errFile)
 		return
 	}
 }
