@@ -202,10 +202,10 @@ func createReport(sourceFile string, reportFile string) {
 
 	pdf.SetXY(10, 25)
 
-	pdf.CellFormat(190, 4, "Project.: "+jsonReport.Data.Project, "0", 1, "LM", false, 0, "")
-	pdf.CellFormat(190, 4, "Service.: "+jsonReport.Data.Service, "0", 1, "LM", false, 0, "")
-	pdf.CellFormat(190, 4, "Stage...: "+jsonReport.Data.Stage, "0", 1, "LM", false, 0, "")
-	pdf.CellFormat(190, 4, "Strategy: "+jsonReport.Data.Teststrategy, "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Project....: "+jsonReport.Data.Project, "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Stage......: "+jsonReport.Data.Stage, "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Service....: "+jsonReport.Data.Service, "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Strategy...: "+jsonReport.Data.Teststrategy, "0", 1, "LM", false, 0, "")
 
 	// Set the Text Color to green/red when the test was passed/failed
 	if jsonReport.Data.Result == "pass" {
@@ -213,16 +213,17 @@ func createReport(sourceFile string, reportFile string) {
 	} else {
 		pdf.SetTextColor(255, 0, 0)
 	}
-	pdf.CellFormat(190, 4, "Result..: "+jsonReport.Data.Result, "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Result.....: "+jsonReport.Data.Result, "0", 1, "LM", false, 0, "")
 	pdf.SetTextColor(0, 0, 0)
-	pdf.CellFormat(190, 4, "Date....: "+jsonReport.Time.String(), "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Total Score: "+strconv.Itoa(jsonReport.Data.Evaluationdetails.Score)+"%", "0", 1, "LM", false, 0, "")
+	pdf.CellFormat(190, 4, "Date.......: "+jsonReport.Time.String(), "0", 1, "LM", false, 0, "")
 
 	// Show Indicator Results
 	pdf.SetXY(10, 55)
 	for _, indicator := range jsonReport.Data.Evaluationdetails.IndicatorResults {
 		var valueString string = strconv.FormatFloat(indicator.Value.Value, 'f', -1, 64)
 
-		pdf.CellFormat(190, 4, indicator.Value.Metric+":\t "+valueString+"\t ("+indicator.Status+")",
+		pdf.CellFormat(190, 4, indicator.Value.Metric+":\t "+valueString+"\t ("+indicator.Status+") (score: "+strconv.Itoa(indicator.Score)+")",
 			"0", 1, "LM", false, 0, "")
 
 		// Add 7mm to the final chart Position for each line
